@@ -1,0 +1,264 @@
+1
+  Program PeakFq           U. S. GEOLOGICAL SURVEY             Seq.002.000
+  Version 7.1         Annual peak flow frequency analysis      Run Date / Time
+  3/14/2014                                                    06/13/2014 11:14
+
+                         --- PROCESSING OPTIONS ---  
+
+                      Plot option         = None              
+                      Basin char output   = None          
+                      Print option        = Yes
+                      Debug print         = No 
+                      Input peaks listing = Long 
+                      Input peaks format  = WATSTORE peak file  
+
+                      Input files used:
+                         peaks (ascii)  - C:\Home\Projects\FloodSkew\Analysis\R\FloodSkew\data\Raw\PK04031500.TXT         
+                         specifications - C:\Home\Projects\FloodSkew\Analysis\R\FloodSkew\data\Raw\PKFQWPSF.TMP           
+                      Output file(s): 
+                         main - C:\Home\Projects\FloodSkew\Analysis\R\FloodSkew\data\Raw\PK04031500.PRT         
+  
+1
+
+
+  Program PeakFq           U. S. GEOLOGICAL SURVEY             Seq.001.001
+  Version 7.1         Annual peak flow frequency analysis      Run Date / Time
+  3/14/2014                                                    06/13/2014 11:14
+  
+            Station - 04031500  PRESQUE ISLE RIVER AT MARENISCO, MI             
+
+
+                     I N P U T   D A T A   S U M M A R Y
+
+                Number of peaks in record            =       38
+                Peaks not used in analysis           =        0
+                Systematic peaks in analysis         =       38
+                Historic peaks in analysis           =        0
+                Beginning Year                       =     1945
+                Ending Year                          =     1982
+                Historical Period Length             =        0
+                Generalized skew                     =   -0.117
+                     Standard error                  =    0.550
+                     Mean Square error               =    0.303
+                Skew option                          =   WEIGHTED  
+                Gage base discharge                  =      0.0
+                User supplied high outlier threshold =   --           
+                User supplied PILF (LO) criterion    =   --           
+                Plotting position parameter          =     0.00
+                Type of analysis                       BULL.17B
+                PILF (LO) Test Method                      GBT 
+                Perception Thresholds            =   Not Applicable
+                Interval Data                    =   Not Applicable
+
+
+
+  *********  NOTICE  --  Preliminary machine computations.        *********     
+  *********  User responsible for assessment and interpretation.  *********     
+
+    WCF134I-NO SYSTEMATIC PEAKS WERE BELOW GAGE BASE.                   0.0
+    WCF195I-NO LOW OUTLIERS WERE DETECTED BELOW CRITERION.            388.2
+    WCF163I-NO HIGH OUTLIERS OR HISTORIC PEAKS EXCEEDED HHBASE.      3752.9
+
+
+                                        Kendall's Tau Parameters
+
+                                                        MEDIAN   No. of
+                                       TAU    P-VALUE    SLOPE   PEAKS
+                                ---------------------------------------
+             SYSTEMATIC RECORD     -0.044      0.706     -3.125    38
+
+
+1
+
+
+  Program PeakFq           U. S. GEOLOGICAL SURVEY             Seq.001.002
+  Version 7.1         Annual peak flow frequency analysis      Run Date / Time
+  3/14/2014                                                    06/13/2014 11:14
+  
+            Station - 04031500  PRESQUE ISLE RIVER AT MARENISCO, MI             
+
+
+           ANNUAL FREQUENCY CURVE PARAMETERS -- LOG-PEARSON TYPE III 
+
+                        FLOOD BASE                   LOGARITHMIC         
+                  ----------------------  -------------------------------
+                             EXCEEDANCE                STANDARD          
+                   DISCHARGE PROBABILITY     MEAN     DEVIATION     SKEW 
+                  -------------------------------------------------------
+ SYSTEMATIC RECORD       0.0     1.0000     3.0817      0.1851      0.144
+ BULL.17B ESTIMATE       0.0     1.0000     3.0817      0.1851      0.060
+
+ BULL.17B ESTIMATE OF MSE OF AT-SITE SKEW     0.1439
+
+
+
+    ANNUAL FREQUENCY CURVE -- DISCHARGES AT SELECTED EXCEEDANCE PROBABILITIES
+
+   ANNUAL                         <-- FOR BULLETIN 17B ESTIMATES -->
+EXCEEDANCE  BULL.17B SYSTEMATIC   VARIANCE  95% CONFIDENCE INTERVALS
+PROBABILITY ESTIMATE   RECORD      OF EST.       LOWER       UPPER
+
+   0.9950     412.3     426.4       ----        310.5        504.5
+   0.9900     456.2     468.5       ----        351.0        550.7
+   0.9500     603.0     609.4       ----        490.6        703.2
+   0.9000     700.9     703.8       ----        586.0        804.4
+   0.8000     842.1     840.9       ----        724.9        951.9
+   0.6667    1001.      996.3       ----        880.1       1123.0
+   0.5000    1202.     1195.        ----       1070.0       1349.0
+   0.4292    1297.     1290.        ----       1157.0       1462.0
+   0.2000    1726.     1722.        ----       1527.0       2004.0
+   0.1000    2090.     2097.        ----       1820.0       2502.0
+   0.0400    2568.     2599.        ----       2187.0       3194.0
+   0.0200    2937.     2993.        ----       2459.0       3752.0
+   0.0100    3315.     3403.        ----       2733.0       4343.0
+   0.0050    3707.     3833.        ----       3009.0       4972.0
+   0.0020    4246.     4436.        ----       3382.0       5865.0
+1
+
+
+  Program PeakFq           U. S. GEOLOGICAL SURVEY             Seq.001.003
+  Version 7.1         Annual peak flow frequency analysis      Run Date / Time
+  3/14/2014                                                    06/13/2014 11:14
+  
+            Station - 04031500  PRESQUE ISLE RIVER AT MARENISCO, MI             
+
+
+                       I N P U T   D A T A   L I S T I N G
+
+
+    WATER       PEAK   PEAKFQ
+     YEAR      VALUE    CODES  REMARKS
+     1945     1140.0       
+     1946     1860.0       
+     1947     1030.0       
+     1948      518.0       
+     1949     1350.0       
+     1950     1750.0       
+     1951     2600.0       
+     1952     2670.0       
+     1953     1230.0       
+     1954     1680.0       
+     1955     1060.0       
+     1956      648.0       
+     1957     1540.0       
+     1958      762.0       
+     1959      559.0       
+     1960     3520.0       
+     1961     1040.0       
+     1962      662.0       
+     1963      975.0       
+     1964     1070.0       
+     1965     1620.0       
+     1966     1000.0       
+     1967     1410.0       
+     1968      812.0       
+     1969     1220.0       
+     1970     1610.0       
+     1971     1700.0       
+     1972     1260.0       
+     1973     1050.0       
+     1974     1390.0       
+     1975     1470.0       
+     1976     1140.0       
+     1977      589.0       
+     1978     1180.0       
+     1979     1620.0       
+     1980      852.0       
+     1981      965.0       
+     1982     1650.0       
+
+
+        Explanation of peak discharge qualification codes
+
+       PeakFQ    NWIS
+        CODE     CODE   DEFINITION
+
+          D        3    Dam failure, non-recurrent flow anomaly
+          G        8    Discharge greater than stated value
+          X       3+8   Both of the above
+          L        4    Discharge less than stated value
+          K     6 OR C  Known effect of regulation or urbanization
+          H        7    Historic peak
+
+          -  Minus-flagged discharge -- Not used in computation
+                -8888.0 -- No discharge value given
+          -  Minus-flagged water year -- Historic peak used in computation
+
+
+
+1
+
+
+  Program PeakFq           U. S. GEOLOGICAL SURVEY             Seq.001.004
+  Version 7.1         Annual peak flow frequency analysis      Run Date / Time
+  3/14/2014                                                    06/13/2014 11:14
+  
+            Station - 04031500  PRESQUE ISLE RIVER AT MARENISCO, MI             
+
+
+   EMPIRICAL FREQUENCY CURVES -- WEIBULL PLOTTING POSITIONS
+
+   WATER     RANKED   SYSTEMATIC     B17B
+    YEAR   DISCHARGE    RECORD     ESTIMATE
+    1960     3520.0     0.0256      0.0256 
+    1952     2670.0     0.0513      0.0513 
+    1951     2600.0     0.0769      0.0769 
+    1946     1860.0     0.1026      0.1026 
+    1950     1750.0     0.1282      0.1282 
+    1971     1700.0     0.1538      0.1538 
+    1954     1680.0     0.1795      0.1795 
+    1982     1650.0     0.2051      0.2051 
+    1965     1620.0     0.2308      0.2308 
+    1979     1620.0     0.2564      0.2564 
+    1970     1610.0     0.2821      0.2821 
+    1957     1540.0     0.3077      0.3077 
+    1975     1470.0     0.3333      0.3333 
+    1967     1410.0     0.3590      0.3590 
+    1974     1390.0     0.3846      0.3846 
+    1949     1350.0     0.4103      0.4103 
+    1972     1260.0     0.4359      0.4359 
+    1953     1230.0     0.4615      0.4615 
+    1969     1220.0     0.4872      0.4872 
+    1978     1180.0     0.5128      0.5128 
+    1945     1140.0     0.5385      0.5385 
+    1976     1140.0     0.5641      0.5641 
+    1964     1070.0     0.5897      0.5897 
+    1955     1060.0     0.6154      0.6154 
+    1973     1050.0     0.6410      0.6410 
+    1961     1040.0     0.6667      0.6667 
+    1947     1030.0     0.6923      0.6923 
+    1966     1000.0     0.7179      0.7179 
+    1963      975.0     0.7436      0.7436 
+    1981      965.0     0.7692      0.7692 
+    1980      852.0     0.7949      0.7949 
+    1968      812.0     0.8205      0.8205 
+    1958      762.0     0.8462      0.8462 
+    1962      662.0     0.8718      0.8718 
+    1956      648.0     0.8974      0.8974 
+    1977      589.0     0.9231      0.9231 
+    1959      559.0     0.9487      0.9487 
+    1948      518.0     0.9744      0.9744 
+1
+
+
+
+ End PeakFQ analysis.
+   Stations processed :       1
+   Number of errors   :       0
+   Stations skipped   :       0
+   Station years      :      38
+
+
+Data records may have been ignored for the stations listed below.               
+(Card type must be Y, Z, N, H, I, 2, 3, 4,  or *.)                              
+(2, 4, and * records are ignored.)                                              
+                                                                                
+ For the station below, the following records were ignored:                     
+                                                                                
+ FINISHED PROCESSING STATION:  04031500       USGS PRESQUE ISLE RIVER AT MARENIS
+                                                                                
+                                                                                
+ For the station below, the following records were ignored:                     
+                                                                                
+ FINISHED PROCESSING STATION:                                                   
+                                                                                

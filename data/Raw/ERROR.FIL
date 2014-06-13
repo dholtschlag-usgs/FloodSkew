@@ -1,0 +1,127 @@
+ MAIN:Reading Specification file: 
+ C:\Home\Projects\FloodSkew\Analysis\R\FloodSkew\data\Raw\PKFQWPSF.TMP          
+                                                                                
+                                                                                
+    
+ Scanning Spec file for stations. Spec file contents:
+   Verbose                                                                      
+                                            
+   I ASCI PK04031500.TXT                                                        
+                                            
+   O File PK04031500.PRT                                                        
+                                            
+   Station 04031500                                                             
+                                            
+        Analyze B17B                                                            
+                                            
+        BegYear 1945                                                            
+                                            
+        EndYear 1982                                                            
+                                            
+        'NO Historic Period in use                                              
+                                            
+        SkewOpt Weighted                                                        
+                                            
+        GenSkew -0.1173826                                                      
+                                            
+        SkewSE 0.55                                                             
+                                            
+        LOType GBT                                                              
+                                            
+        Latitude 46.37222                                                       
+                                            
+        Longitude 89.69222                                                      
+                                            
+        PlotName 04031500                                                       
+                                            
+ Finished scan of Spec file.
+ MAIN:Found            1  Stations
+ MAIN:Process Record:'Verbose'
+ MAIN:Process Record:'I ASCI PK04031500.TXT'
+ MAIN:Got I, Remaining:'ASCI PK04031500.TXT'
+ OPNINP:Successful Open Watstore file:'PK04031500.TXT'
+ MAIN:Process Record:'O File PK04031500.PRT'
+ MAIN:Got O, Remaining:'FILE PK04031500.PRT'
+ OPENOUT:Opened Output File:'PK04031500.PRT'
+ MAIN:Process Record:'Station 04031500'
+ MAIN:Got STATION, Remaining:'04031500'
+ MAIN:Assigned 04031500        to index            1  of STASPECS
+ MAIN:Process RecordX:'     ANALYZE B17B'
+ MAIN:Add Record To Station Specs
+ MAIN:LNSPECS:           1
+ MAIN:Assign spec:'ANALYZE B17B'
+ MAIN:Process RecordX:'     BEGYEAR 1945'
+ MAIN:Add Record To Station Specs
+ MAIN:Add to existing specs
+ MAIN:LNSPECS:           2
+ MAIN:Assign spec:'BEGYEAR 1945'
+ MAIN:Process RecordX:'     ENDYEAR 1982'
+ MAIN:Add Record To Station Specs
+ MAIN:Add to existing specs
+ MAIN:LNSPECS:           3
+ MAIN:Assign spec:'ENDYEAR 1982'
+ MAIN:Process RecordX:'     'NO HISTORIC PERIOD IN USE'
+ MAIN:Add Record To Station Specs
+ MAIN:Add to existing specs
+ MAIN:LNSPECS:           4
+ MAIN:Assign spec:''NO HISTORIC PERIOD IN USE'
+ MAIN:Process RecordX:'     SKEWOPT WEIGHTED'
+ MAIN:Add Record To Station Specs
+ MAIN:Add to existing specs
+ MAIN:LNSPECS:           5
+ MAIN:Assign spec:'SKEWOPT WEIGHTED'
+ MAIN:Process RecordX:'     GENSKEW -0.1173826'
+ MAIN:Add Record To Station Specs
+ MAIN:Add to existing specs
+ MAIN:LNSPECS:           6
+ MAIN:Assign spec:'GENSKEW -0.1173826'
+ MAIN:Process RecordX:'     SKEWSE 0.55'
+ MAIN:Add Record To Station Specs
+ MAIN:Add to existing specs
+ MAIN:LNSPECS:           7
+ MAIN:Assign spec:'SKEWSE 0.55'
+ MAIN:Process RecordX:'     LOTYPE GBT'
+ MAIN:Add Record To Station Specs
+ MAIN:Add to existing specs
+ MAIN:LNSPECS:           8
+ MAIN:Assign spec:'LOTYPE GBT'
+ MAIN:Process RecordX:'     LATITUDE 46.37222'
+ MAIN:Add Record To Station Specs
+ MAIN:Add to existing specs
+ MAIN:LNSPECS:           9
+ MAIN:Assign spec:'LATITUDE 46.37222'
+ MAIN:Process RecordX:'     LONGITUDE 89.69222'
+ MAIN:Add Record To Station Specs
+ MAIN:Add to existing specs
+ MAIN:LNSPECS:          10
+ MAIN:Assign spec:'LONGITUDE 89.69222'
+ MAIN:Process RecordX:'     PLOTNAME 04031500'
+ MAIN:Add Record To Station Specs
+ MAIN:Add to existing specs
+ MAIN:LNSPECS:          11
+ MAIN:Assign spec:'PLOTNAME 04031500'
+ MAIN:          11  spec(s) for station 04031500       
+   Spec           1 : 'ANALYZE B17B'
+   Spec           2 : 'BEGYEAR 1945'
+   Spec           3 : 'ENDYEAR 1982'
+   Spec           4 : ''NO HISTORIC PERIOD IN USE'
+   Spec           5 : 'SKEWOPT WEIGHTED'
+   Spec           6 : 'GENSKEW -0.1173826'
+   Spec           7 : 'SKEWSE 0.55'
+   Spec           8 : 'LOTYPE GBT'
+   Spec           9 : 'LATITUDE 46.37222'
+   Spec          10 : 'LONGITUDE 89.69222'
+   Spec          11 : 'PLOTNAME 04031500'
+ Done reading spec file
+ MAIN:calling J407XE...
+ J407XE:IA1:           9  INFORM:           2  MSG1:          14
+ After INPUT - NSYS,NHIST,EMAOPT          38           0           0
+ After UPDATEPEAKS - NSYS,NHIST,EMAOPT          38           0           0
+ Debug Info for 
+ 04031500       USGS PRESQUE ISLE RIVER AT MARENISCO, MI             1945-1982  
+            
+ after WCFAGB, IER=           0
+ After INPUT - NSYS,NHIST,EMAOPT           0           0           0
+ After UPDATEPEAKS - NSYS,NHIST,EMAOPT           0           0           0
+ Closing output file C:\Home\Projects\FloodSkew\Analysis\R\FloodSkew\data\Raw\PK
+ 04031500.PRT

@@ -1,0 +1,15 @@
+Verbose
+I ASCI PK04031500.TXT
+O File PK04031500.PRT
+Station 04031500
+     Analyze B17B
+     BegYear 1945
+     EndYear 1982
+     'NO Historic Period in use
+     SkewOpt Weighted
+     GenSkew -0.1173826
+     SkewSE 0.55
+     LOType GBT
+     Latitude 46.37222
+     Longitude 89.69222
+     PlotName 04031500
