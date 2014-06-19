@@ -9,7 +9,7 @@ gages = read.table("./data/miGagesIIa.txt", sep="\t",header=TRUE,
 gagesReg = c("04034500","04035500","04036000","04044400","04058100","04058200",
              "04059000","04061500","04062000","04062500","04063000","04066800",
              "04067000","04108801","04114500","04128000","04129000","04133500",
-             "04133501")
+             "04133501","04157000","04161000","04162900")
 #
 # Subset gages that are not in the set of regulated gages
 gages <- subset(gages, !(gages[,1] %in% gagesReg))
@@ -42,8 +42,20 @@ for (i in 1:nrow(gages)){
   dateStr  <- substr(peakData[5:nData],17,24)
   # Replace missing partial date info with "1001"
   if (length(ndxPartDate)>0){
-    dateStr[ndxPartDate] <- paste(substr(dateStr[ndxPartDate],1,4),"1001",sep="")
+    for (j in 1:length(ndxPartDate)){
+      ndxSpace <- regexpr(" ",dateStr[ndxPartDate[j]])
+      if (ndxSpace[1]==5){
+        # If only a four-digit year is given, assume that this is the water year
+        dateStr[ndxPartDate[j]] <- paste(substr(dateStr[ndxPartDate[j]],1,4),"1001",sep="")
+        # If the year and month is given, assume the peak occurred on the 15th day
+      } else if (ndxSpace[1]==7) {
+        dateStr[ndxPartDate[j]] <- paste(substr(dateStr[ndxPartDate[j]],1,6),"15",sep="")
+        # If the year, month, and day is given, make no substitues
+      } else if (ndxSpace[1]==-1) cat("No change to uncertain date",dateStr[ndxPartDate[j]])
+    }
   }
+  # dateStr[ndxPartDate] <- paste(substr(dateStr[ndxPartDate],1,4),"1001",sep="")
+  # }
   #
   # Convert the character string to date
   dateVal  <- as.Date(dateStr, "%Y%m%d")

@@ -1,15 +1,19 @@
 Verbose
-I ASCI PK04031500.TXT
-O File PK04031500.PRT
-Station 04031500
-     Analyze B17B
-     BegYear 1945
-     EndYear 1982
-     'NO Historic Period in use
-     SkewOpt Weighted
-     GenSkew -0.1173826
+I ASCI PK04164300.TXT
+O File PK04164300.PRT
+O Additional Watstore PK041
+O Export PK04164300.EX
+O Empirical PK04164300
+Station 04164300
+     Analyze EMA
+     PCPT_Thresh 1959 2013 0 1E+20  DEFAULT
+     BegYear 1959
+     EndYear 2013
+     HistPeriod 55
+     SkewOpt Station
+     GenSkew -0.3982269
      SkewSE 0.55
-     LOType GBT
-     Latitude 46.37222
-     Longitude 89.69222
-     PlotName 04031500
+     LOType MGBT
+     Latitude 42.84583
+     Longitude 82.88499
+     PlotName 04164300
