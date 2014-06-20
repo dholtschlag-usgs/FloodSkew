@@ -1,19 +1,27 @@
-Verbose
-I ASCI PK04164300.TXT
-O File PK04164300.PRT
-O Additional Watstore PK041
-O Export PK04164300.EX
-O Empirical PK04164300
-Station 04164300
-     Analyze EMA
-     PCPT_Thresh 1959 2013 0 1E+20  DEFAULT
-     BegYear 1959
-     EndYear 2013
-     HistPeriod 55
-     SkewOpt Station
-     GenSkew -0.3982269
-     SkewSE 0.55
-     LOType MGBT
-     Latitude 42.84583
-     Longitude 82.88499
-     PlotName 04164300
+ VERBOSE
+ I ASCI C:\Home\Projects\FloodSkew\Analysis\R\FloodSkew\data\Raw\PK04034500.TXT
+ O File C:\Home\Projects\FloodSkew\Analysis\R\FloodSkew\data\Raw\PK04034500.PRT
+ O Plot Style None
+ O Plot PrintPos Yes
+ O Plot Position   0.0000000E+00
+ O Additional None
+ O Debug No
+ O Confidence   0.9500000
+ Station 04034500
+      Analyze B17B
+      SkewOpt Weighted
+      GenSkew  -0.1018858
+      SkewSE   0.5500000
+      BegYear         1943
+      EndYear         2011
+      HistPeriod   0.0000000E+00
+      Urb/Reg No
+      LOType GBT
+      LoThresh   0.0000000E+00
+      HiThresh   0.0000000E+00
+      GageBase   0.0000000E+00
+      Latitude    46.47778
+      Longitude    89.09028
+      HiSys    2120.000
+      LoHist   0.0000000E+00
+      PlotName 04034500

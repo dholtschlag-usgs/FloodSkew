@@ -1,5 +1,14 @@
 # Generate a PSF file for peak flow analysis
-# Name the file of interest
+# (1) Read MI GAGES-II data set of streamgages
+# (2) Remove streamgages where regulation or urbanization appears to degrade utility
+# (3) Read in annual peak flow data from files created by dLoadPeakFQ_data.R
+# (4) Use PeadFQ codes to identify and adjust psf for D (dam failure), H (historic peak),
+#     and B (incomplete or uncertain peak flow date)
+# (5) Generate psf files that are consistent with http://acwi.gov/hydrology/Frequency/b17_swfaq/EMAFAQ.html
+#       criteria
+# Dave Holtschlag, USGS MI-WSC
+# * * * Preliminary work product, no guarantees * * *
+#
 setwd("C:/Home/Projects/FloodSkew/Analysis/R/FloodSkew")
 # Read set of MI gages derived from the Gages II data file
 gages = read.table("./data/miGagesIIa.txt", sep="\t",header=TRUE,
@@ -9,7 +18,7 @@ gages = read.table("./data/miGagesIIa.txt", sep="\t",header=TRUE,
 gagesReg = c("04034500","04035500","04036000","04044400","04058100","04058200",
              "04059000","04061500","04062000","04062500","04063000","04066800",
              "04067000","04108801","04114500","04128000","04129000","04133500",
-             "04133501","04157000","04161000","04162900")
+             "04133501","04157000","04161000","04162900","04170500")
 #
 # Subset gages that are not in the set of regulated gages
 gages <- subset(gages, !(gages[,1] %in% gagesReg))
