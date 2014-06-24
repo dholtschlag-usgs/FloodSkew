@@ -1,0 +1,80 @@
+Detrend Peak Flow Data with Nonparameteric Linear Slope Estimator
+========================================================
+
+# Initialize environmet   
+```{r Initialize analysis, echo = TRUE }
+setwd("C:/Home/Projects/FloodSkew/Analysis/R/FloodSkew/")
+```
+
+# Read in peak flow data from 
+```{r Read peakflow data file}
+stationNo <- "04101800"
+peakFile  <- paste("./data/Raw/pk",stationNo,".txt",sep="")
+#
+# cat(paste("Working directory is ",getwd(),sep=""))
+# Read in the file 
+peakData <- readLines(peakFile)
+# Determine the length of the data file
+nData <- length(peakData)
+#
+# Extract the station number and name from H card
+if (substr(peakData[3],1,1)=="N"){
+  staNo    <- substr(peakData[3], 2,16)
+  staNo    <- substr(peakData[3], 2,regexpr(" ",staNo))
+  staName  <- substr(peakData[3],17,64)
+}
+# Extract the character string for flow
+flowVal  <- as.numeric(substr(peakData[5:nData],25,31))
+# Extract the flow codes for the record
+flowCode <- substr(peakData[5:nData],32,43) 
+# Find indices of peaks with partial date information
+ndxPartDate  <- grep("B",flowCode)
+# Create date string from peak file data
+dateStr  <- substr(peakData[5:nData],17,24)
+# Convert the character string to date
+dateVal  <- as.Date(dateStr, "%Y%m%d")
+plot(dateVal,log10(flowVal),pch=16, col="blue",cex=0.9,
+     xlab="Year",ylab="log10 Peak Flow, in cfs",
+     main = paste("Peak flow time series at",staNo,staName))
+```
+
+# Plot the trend through the time series plot
+
+```{r Plot trend line, echo=TRUE}
+ndxSta <- which(PeakFlowStats$Station == staNo)
+cat(paste("Station",PeakFlowStats$Station[ndxSta],"has a median slope of",
+          PeakFlowStats$tauMedSlope[ndxSta]),"and a p-value of",
+    PeakFlowStats$tauP_value[ndxSta])
+cat("The end date is",as.character(median(dateVal)),
+    "and the median flow is",median(flowVal),"\n")
+# points(median(dateVal),median(log10(flowVal)),pch=4,col="red")
+# Compute time vector from median time
+relMedDate <- (dateVal-median(dateVal))/365.25
+relMedFlow <- as.numeric(median(flowVal) + relMedDate * PeakFlowStats$tauMedSlope[ndxSta])
+lines(dateVal,log10(relMedFlow),lty="dashed",col="red")
+# Detrend flowVal 
+flowValdTrd <- as.numeric(flowVal - relMedDate * PeakFlowStats$tauMedSlope[ndxSta])
+points(dateVal,log10(flowValdTrd),pch=17,col="darkgreen",cex=0.75)
+legend("topleft",legend=c("Measured Flows","Trend Line","Detrended Flows"),
+       pch=c(16,NA,17),lty=c(NA,"dashed",NA),col=c("blue","red","darkgreen"),
+       cex = 0.75)
+```
+
+# (4) Detrend flows without changing most recent flow
+```{r Write detrended flows}
+scratch <- peakData
+for (i in 1:length(dateVal)){
+  substr(scratch[4+i],26,31) <- format(round(flowValdTrd[i], digits=0),
+                                       justify="right", width=6)
+}
+# writeLines to output file
+outFile  <- paste("./data/raw/pk",staNo,"d.txt",sep="")
+fileConn <- file(outFile, open="w+") 
+for (i in 1:length(scratch)){
+  writeLines(scratch[i], con = fileConn, sep = "\n")
+}
+close(fileConn)
+```
+
+# (5) Write detrended flows to PeakFQ formatted file
+

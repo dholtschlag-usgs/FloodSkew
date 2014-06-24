@@ -1,19 +1,19 @@
 Verbose
-I ASCI PK04176500.TXT
-O File PK04176500.PRT
+I ASCI PK04101800D.TXT
+O File PK04101800D.PRT
 O Additional Watstore PK041
-O Export PK04176500.EX
-O Empirical PK04176500
-Station 04176500
+O Export PK04101800D.E
+O Empirical PK04101800
+Station 04101800
      Analyze EMA
-     PCPT_Thresh 1938 2013 0 1E+20  DEFAULT
-     BegYear 1938
+     PCPT_Thresh 1961 2013 0 1E+20  DEFAULT
+     BegYear 1961
      EndYear 2013
-     HistPeriod 76
+     HistPeriod 53
      SkewOpt Station
-     GenSkew -0.3981505
+     GenSkew -0.4
      SkewSE 0.55
      LOType MGBT
-     Latitude 41.96056
-     Longitude 83.53111
-     PlotName 04176500
+     Latitude 41.91333
+     Longitude 86.21305
+     PlotName 04101800
