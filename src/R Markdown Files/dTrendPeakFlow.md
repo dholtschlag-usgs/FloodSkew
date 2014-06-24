@@ -2,16 +2,32 @@ Detrend Peak Flow Data with Nonparameteric Linear Slope Estimator
 ========================================================
 
 # Initialize environmet   
-```{r Initialize analysis, echo = TRUE }
+
+```r
 setwd("C:/Home/Projects/FloodSkew/Analysis/R/FloodSkew/")
 ```
 
 # Read in peak flow data from 
-```{r Read peakflow data file}
+
+```r
 # Identify streamgages where trends may be present
 ndxTrnd <- which(PeakFlowStats$tauP_value < 0.02)
+```
+
+```
+## Error: object 'PeakFlowStats' not found
+```
+
+```r
 # Number of streamgages that may have a trend
 numTrnd <- length(ndxTrnd)
+```
+
+```
+## Error: object 'ndxTrnd' not found
+```
+
+```r
 # PeakFlowStats$Station[ndxTrnd]
 for (i in 1:numTrnd){
   # ID streamgage for analysis
@@ -64,6 +80,10 @@ for (i in 1:numTrnd){
          pch=c(16,NA,17),lty=c(NA,"dashed",NA),col=c("blue","red","darkgreen"),
          cex = 0.75)
 }
+```
+
+```
+## Error: object 'numTrnd' not found
 ```
 
 

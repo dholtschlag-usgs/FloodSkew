@@ -2,12 +2,14 @@ Detrend Peak Flow Data with Nonparameteric Linear Slope Estimator
 ========================================================
 
 # Initialize environmet   
-```{r Initialize analysis, echo = TRUE }
+
+```r
 setwd("C:/Home/Projects/FloodSkew/Analysis/R/FloodSkew/")
 ```
 
 # Read in peak flow data from 
-```{r Read peakflow data file}
+
+```r
 # Identify streamgages where trends may be present
 ndxTrnd <- which(PeakFlowStats$tauP_value < 0.02)
 # Number of streamgages that may have a trend
@@ -64,6 +66,15 @@ for (i in 1:numTrnd){
          pch=c(16,NA,17),lty=c(NA,"dashed",NA),col=c("blue","red","darkgreen"),
          cex = 0.75)
 }
+```
+
+```
+## Warning: cannot open file './data/Raw/pk04033000.txt': No such file or
+## directory
+```
+
+```
+## Error: cannot open the connection
 ```
 
 
