@@ -1,0 +1,17 @@
+I ASCI PK04097500.TXT
+O File PK04097500.PRT
+O Additional Watstore PK040
+O Export PK04097500.EX
+O Empirical PK04097500
+Station 04097500
+     Analyze EMA
+     PCPT_Thresh 1950 2013 0 1E+20  DEFAULT
+     PCPT_Thresh 1951 1953 8260 1E+20  MISSING RECORD IN HISTORIC PERIOD 1
+     PCPT_Thresh 1984 1992 8260 1E+20 Missing record period 2
+     PCPT_Thresh 1918 1949 8260 1E+20 Prehistory perception level
+     Peak 1950 8260 H
+     BegYear 1950
+     EndYear 2013
+     HistPeriod 64
+     SkewOpt Station
+     LOType MGBT

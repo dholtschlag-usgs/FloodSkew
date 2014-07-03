@@ -1,0 +1,14 @@
+I ASCI PK04066003.TXT
+O File PK04066003.PRT
+O Additional Watstore PK04066003.bcd
+O Export PK04066003.exp
+O Empirical PK04066003.emp
+Station 04066003
+     Analyze EMA
+     PCPT_Thresh 1950 2013 0 1E+20 Default
+     PCPT_Thresh 1983 1996 1E+20 1E+20 Missing record in historic period 1
+     BegYear 1950
+     EndYear 2013
+     HistPeriod 55
+     SkewOpt Station
+     LOType MGBT

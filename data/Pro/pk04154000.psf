@@ -1,0 +1,9 @@
+I ASCI PK04154000.TXT
+O File PK04154000.PRT
+Station 04154000
+     Analyze EMA
+     PCPT_Thresh 1933 2013 0 1E+20 Default
+     BegYear 1933
+     EndYear 2013
+     HistPeriod 81
+     LOType MGBT

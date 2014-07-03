@@ -1,0 +1,13 @@
+I ASCI PK04139000.TXT
+O File PK04139000.PRT
+O Additional Watstore PK04139000.bcd
+O Export PK04139000.exp
+O Empirical PK04139000.emp
+Station 04139000
+     Analyze EMA
+     PCPT_Thresh 1951 1989 0 1E+20 Default
+     BegYear 1951
+     EndYear 1989
+     HistPeriod 44
+     SkewOpt Station
+     LOType MGBT

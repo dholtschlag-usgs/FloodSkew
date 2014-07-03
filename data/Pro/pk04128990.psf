@@ -1,0 +1,14 @@
+I ASCI PK04128990.TXT
+O File PK04128990.PRT
+O Additional Watstore PK04128990.bcd
+O Export PK04128990.exp
+O Empirical PK04128990.emp
+Station 04128990
+     Analyze EMA
+     PCPT_Thresh 1951 2013 0 1E+20 Default
+     PCPT_Thresh 1957 1957 1E+20 1E+20 Dam Break Affected Peak1
+     BegYear 1951
+     EndYear 2013
+     HistPeriod 68
+     SkewOpt Station
+     LOType MGBT

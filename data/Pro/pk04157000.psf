@@ -1,0 +1,34 @@
+I ASCI PK04157000.TXT
+O File PK04157000.PRT
+O Additional Watstore PK04157000.bcd
+O Export PK04157000.exp
+O Empirical PK04157000.emp
+Station 04157000
+     Analyze EMA
+     PCPT_Thresh 1873 2012 0 1E+20 Default
+     PCPT_Thresh 1874 1875 50000 1E+20 Missing record in historic period 1
+     PCPT_Thresh 1877 1883 50000 1E+20 Missing record in historic period 2
+     PCPT_Thresh 1885 1897 50000 1E+20 Missing record in historic period 3
+     PCPT_Thresh 1899 1900 42600 1E+20 Missing record in historic period 4
+     PCPT_Thresh 1902 1903 36200 1E+20 Missing record in historic period 5
+     PCPT_Thresh 1911 1911 36200 1E+20 Missing record in historic period 6
+     PCPT_Thresh 1914 1914 36200 1E+20 Missing record in historic period 7
+     PCPT_Thresh 1924 1925 36200 1E+20 Missing record in historic period 8
+     PCPT_Thresh 1927 1927 26300 1E+20 Missing record in historic period 9
+     PCPT_Thresh 1931 1932 26300 1E+20 Missing record in historic period 10
+     PCPT_Thresh 1934 1934 22100 1E+20 Missing record in historic period 11
+     PCPT_Thresh 1936 1937 22100 1E+20 Missing record in historic period 12
+     PCPT_Thresh 1939 1941 22100 1E+20 Missing record in historic period 13
+     PCPT_Thresh 1944 1944 22100 1E+20 Missing record in historic period 14
+     PCPT_Thresh 1949 1949 22100 1E+20 Missing record in historic period 15
+     PCPT_Thresh 1953 1953 22100 1E+20 Missing record in historic period 16
+     PCPT_Thresh 1955 1955 22100 1E+20 Missing record in historic period 17
+     PCPT_Thresh 1958 1958 22100 1E+20 Missing record in historic period 18
+     PCPT_Thresh 1961 1961 22100 1E+20 Missing record in historic period 19
+     PCPT_Thresh 1963 1964 22100 1E+20 Missing record in historic period 20
+     PCPT_Thresh 1966 1966 22100 1E+20 Missing record in historic period 21
+     BegYear 1873
+     EndYear 2012
+     HistPeriod 97
+     SkewOpt Station
+     LOType MGBT

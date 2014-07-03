@@ -1,0 +1,16 @@
+I ASCI PK04174500.TXT
+O File PK04174500.PRT
+O Additional Watstore PK04174500.bcd
+O Export PK04174500.exp
+O Empirical PK04174500.emp
+Station 04174500
+     Analyze EMA
+     PCPT_Thresh 1902 1980 0 1E+20 Default
+     PCPT_Thresh 1903 1903 5510 1E+20 Missing record in historic period 1
+     PCPT_Thresh 1905 1905 5510 1E+20 Missing record in historic period 2
+     PCPT_Thresh 1948 1948 5510 1E+20 Missing record in historic period 3
+     BegYear 1902
+     EndYear 1980
+     HistPeriod 114
+     SkewOpt Station
+     LOType MGBT
