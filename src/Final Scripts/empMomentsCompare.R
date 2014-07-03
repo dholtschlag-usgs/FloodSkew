@@ -1,4 +1,7 @@
 # Generate a PSF file for peak flow analysis
+#
+# Load special libraries
+library("PearsonDS", lib.loc="C:/Users/dholtsch/Documents/R/win-library/3.1")
 # Name the file of interest
 setwd("C:/Home/Projects/FloodSkew/Analysis/R/FloodSkew")
 # Read set of MI gages derived from the Gages II data file
@@ -13,12 +16,18 @@ gagesReg = c("04034500","04035500","04036000","04044400","04058100","04058200",
 #
 # Subset gages that are not in the set of regulated gages
 gages <- subset(gages, !(gages[,1] %in% gagesReg))
+# Number of active gages
+nGages <- nrow(gages)
+# allocate dataframe to contain moment estimates 
+dfLP3  <- data.frame(station = character(nGages),lp3mean = numeric(nGages),
+                     lp3var  = numeric(nGages),  lp3skew = numeric(nGages),
+                     lp3kurt = numeric(nGages),  nPeaks  = integer(nGages))
 #
-# for (i in 1:nrow(gages)){
-for (i in 1:nrow){
+for (i in 1:nrow(gages)){
+# for (i in 1:nrow){
   cat(paste("Generating PSF",i,"for",gages[i,1],gages[i,2],"\n"))
   stationNo <- gages[i,1]
-  peakFile  <- paste("./data/Raw/pk",stationNo,".txt",sep="")
+  peakFile  <- paste("./data/Processed/pk",stationNo,".txt",sep="")
   #
   # cat(paste("Working directory is ",getwd(),sep=""))
   # Read in the file 
@@ -89,6 +98,9 @@ for (i in 1:nrow){
          col=c("blue","red","green"),
          pch=c(16,16,16),cex=0.5)
   #
+  dfLP3[i,1]   <- staNo;
+  dfLP3[i,2:5] <- empMoments(log10(flowVal))
+  dfLP3[i,6]   <- length(flowVal)
   # Find lag1 differences between consecutive water years
   diffWY   <- diff(wYear, lag=1)
   # Length of ndxMisRec corresponds to the number of periods of missing record
@@ -140,3 +152,5 @@ for (i in 1:nrow){
 #   writeLines(paste("     LOType MGBT",sep=""),          fileConn, sep = "\n")
 #   close(fileConn)
 }
+pearsonDiagram(max.skewness = sqrt(6), max.kurtosis = 15)
+points(dfLP3[,"lp3skew"]^2, dfLP3[,"lp3kurt"], pch=16, col = "blue", cex = 0.5)

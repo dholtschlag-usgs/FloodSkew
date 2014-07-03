@@ -14,11 +14,11 @@ gagesReg = c("04034500","04035500","04036000","04044400","04058100","04058200",
 # Subset gages that are not in the set of regulated gages
 gages <- subset(gages, !(gages[,1] %in% gagesReg))
 #
-# for (i in 1:nrow(gages)){
-for (i in 1:nrow){
+for (i in 1:nrow(gages)){
+# for (i in 1:nrow){
   cat(paste("Generating PSF",i,"for",gages[i,1],gages[i,2],"\n"))
   stationNo <- gages[i,1]
-  peakFile  <- paste("./data/Raw/pk",stationNo,".txt",sep="")
+  peakFile  <- paste("./data/Processed/pk",stationNo,".txt",sep="")
   #
   # cat(paste("Working directory is ",getwd(),sep=""))
   # Read in the file 

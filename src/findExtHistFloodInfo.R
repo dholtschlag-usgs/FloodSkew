@@ -14,9 +14,9 @@ gagesReg = c("04034500","04035500","04036000","04044400","04058100","04058200",
 # Subset gages that are not in the set of regulated gages
 gages <- subset(gages, !(gages[,1] %in% gagesReg))
 #
-# for (i in 1:nrow(gages)){
-for (i in 1:nrow){
-  cat(paste("Generating PSF",i,"for",gages[i,1],gages[i,2],"\n"))
+for (i in 1:nrow(gages)){
+# for (i in 46:61){
+  # cat(paste("Generating PSF",i,"for",gages[i,1],gages[i,2],"\n"))
   stationNo <- gages[i,1]
   peakFile  <- paste("./data/Raw/pk",stationNo,".txt",sep="")
   #
@@ -40,8 +40,10 @@ for (i in 1:nrow){
   histInfo <- substr(peakData[5:nData],60,63)
   # Find nonblank string with dates of earlier historic data
   ndxInfo  <- which(nchar(gsub(" ","",histInfo)) > 0)
-  # List the station and historical years
-  cat("staNo",histInfo[ndxInfo],"\n")
+  if (length(ndxInfo) > 0) {
+    # List the station and historical years
+    cat(staNo,histInfo[ndxInfo],"\n")
+  }
   # Find indices of peaks with partial date information
   ndxPartDate  <- grep("B",flowCode)
   # Create date string from peak file data
