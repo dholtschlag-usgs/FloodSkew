@@ -1,0 +1,23 @@
+00:00:00.054	frmPeakfq_Load:StartToFile 2014-07-02 01:18:15
+00:00:10.406	FindFile:Finding file: statusMonitor.exe
+00:00:10.413	FindFile:Found file: c:\program files (x86)\peakfq\bin\statusmonitor.exe
+00:00:10.416	Status:MonitorLaunched
+00:00:10.417	WriteStatus:(Begin)
+00:00:10.417	WriteStatus:(Show)
+00:00:10.418	WriteStatus:(Label Title PKFQWin 7.0 )
+00:00:10.418	RunBatchModel:Status Running PeakFQ from C:\Home\Projects\FloodSkew\Analysis\R\FloodSkew\data\Processed using spec file C:\Home\Projects\FloodSkew\Analysis\R\FloodSkew\data\Processed\PKFQWPSF.TMP
+00:00:10.418	WriteStatus:(Running PeakFQ from C:\Home\Projects\FloodSkew\Analysis\R\FloodSkew\data\Processed using spec file C:\Home\Projects\FloodSkew\Analysis\R\FloodSkew\data\Processed\PKFQWPSF.TMP)
+00:00:10.430	RunBatchModel:Status PeakFQ run successfully.
+00:00:10.430	WriteStatus:(PeakFQ run successfully.)
+00:00:10.430	WriteStatus:(Exit)
+00:01:07.868	FindFile:Finding file: statusMonitor.exe
+00:01:07.869	FindFile:Found file: c:\program files (x86)\peakfq\bin\statusmonitor.exe
+00:01:07.872	Status:MonitorLaunched
+00:01:07.872	WriteStatus:(Begin)
+00:01:07.872	WriteStatus:(Show)
+00:01:07.872	WriteStatus:(Label Title PKFQWin 7.0 )
+00:01:07.872	RunBatchModel:Status Running PeakFQ from C:\Home\Projects\FloodSkew\Analysis\R\FloodSkew\data\Processed using spec file C:\Home\Projects\FloodSkew\Analysis\R\FloodSkew\data\Processed\PKFQWPSF.TMP
+00:01:07.872	WriteStatus:(Running PeakFQ from C:\Home\Projects\FloodSkew\Analysis\R\FloodSkew\data\Processed using spec file C:\Home\Projects\FloodSkew\Analysis\R\FloodSkew\data\Processed\PKFQWPSF.TMP)
+00:01:07.889	RunBatchModel:Status PeakFQ run successfully.
+00:01:07.889	WriteStatus:(PeakFQ run successfully.)
+00:01:07.889	WriteStatus:(Exit)
